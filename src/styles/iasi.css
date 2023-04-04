@@ -1,0 +1,58 @@
+[id="Gradina Botanica"]:hover > img {
+  scale: 1.3;
+  transform: translateY(-20%);
+}
+
+[id="Gradina Botanica"]:hover > h3 {
+  scale: 1.2;
+  visibility: visible;
+  transform: translateY(-60%);
+}
+
+[id="Palatul Culturii"]:hover > img {
+  scale: 1.3;
+  transform: translateY(-20%);
+}
+
+[id="Palatul Culturii"]:hover > h3 {
+  scale: 1.2;
+  visibility: visible;
+  transform: translateY(-60%);
+}
+[id="Bulevardul Stefan cel Mare"]:hover > img {
+  scale: 1.3;
+  transform: translateY(-20%);
+}
+
+[id="Bulevardul Stefan cel Mare"]:hover > h3 {
+  scale: 1.2;
+  visibility: visible;
+  transform: translateY(-60%);
+}
+[id="Palatul Roznovanu"]:hover > img {
+  scale: 1.3;
+  transform: translateY(-20%);
+}
+
+[id="Palatul Roznovanu"]:hover > h3 {
+  scale: 1.2;
+  visibility: visible;
+  transform: translateY(-60%);
+}
+
+[id="Gradina Botanica"] {
+  top: -260px;
+  left: -50px;
+}
+[id="Bulevardul Stefan cel Mare"] {
+  top: -335px;
+  left: -15px;
+}
+[id="Palatul Roznovanu"] {
+  top: -560px;
+  left: 5px;
+}
+[id="Palatul Culturii"] {
+  top: -260px;
+  left: 40px;
+}

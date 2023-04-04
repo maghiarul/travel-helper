@@ -1,0 +1,58 @@
+#Cazinoul:hover > img {
+  scale: 1.3;
+  transform: translateY(-20%);
+}
+
+#Cazinoul:hover > h3 {
+  scale: 1.2;
+  visibility: visible;
+  transform: translateY(-60%);
+}
+
+#Delfinariul:hover > img {
+  scale: 1.3;
+  transform: translateY(-20%);
+}
+
+#Delfinariul:hover > h3 {
+  scale: 1.2;
+  visibility: visible;
+  transform: translateY(-60%);
+}
+[id="Farul Genovez"]:hover > img {
+  scale: 1.3;
+  transform: translateY(-20%);
+}
+
+[id="Farul Genovez"]:hover > h3 {
+  scale: 1.2;
+  visibility: visible;
+  transform: translateY(-60%);
+}
+[id="Piata Ovidiu"]:hover > img {
+  scale: 1.3;
+  transform: translateY(-20%);
+}
+
+[id="Piata Ovidiu"]:hover > h3 {
+  scale: 1.2;
+  visibility: visible;
+  transform: translateY(-60%);
+}
+
+#Cazinoul {
+  top: -170px;
+  left: 70px;
+}
+[id="Farul Genovez"] {
+  top: -240px;
+  left: 70px;
+}
+[id="Piata Ovidiu"] {
+  top: -370px;
+  left: 15px;
+}
+#Delfinariul {
+  top: -300px;
+  left: 100px;
+}

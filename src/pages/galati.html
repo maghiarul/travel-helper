@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles/galati.css" rel="stylesheet" />
+    <link href="../styles/globals.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.jpg" />
+    <script src="../scripts/galati.js"></script>
+    <title>TH | Galati</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="a">Galati</h1>
+      <p id="b">"Galicia"</p>
+      <div id="c">
+        <img
+          src="../assets/images/galati/galati.png"
+          alt="galati"
+          width="350px"
+          height="auto"
+        />
+        <div class="pins" id="Faleza Dunarii" onclick="showPlace(this.id)">
+          <h3>Faleza Dunarii</h3>
+          <img
+            src="../assets/images/pin.svg"
+            width="32px"
+            height="auto"
+            class="pin"
+          />
+        </div>
+        <div class="pins" id="Turnul de Televiziune" onclick="showPlace(this.id)">
+          <h3>Turnul de Televiziune</h3>
+          <img
+            src="../assets/images/pin.svg"
+            width="32px"
+            height="auto"
+            class="pin"
+          />
+        </div>
+        <div class="pins" id="Muzeu de Istorie" onclick="showPlace(this.id)">
+          <h3>Muzeu de Istorie</h3>
+          <img
+            src="../assets/images/pin.svg"
+            width="32px"
+            height="auto"
+            class="pin"
+          />
+        </div>
+        <div class="pins" id="Gradina Botanica" onclick="showPlace(this.id)">
+          <h3>Gradina Botanica</h3>
+          <img
+            src="../assets/images/pin.svg"
+            width="32px"
+            height="auto"
+            class="pin"
+          />
+        </div>
+      </div>
+      <div class="info_locatie">
+        <div class="nume-desc">
+          <h1 id="nume"></h1>
+          <p id="desc"></p>
+        </div>
+        <div class="poze">
+          <img id="poza1" class="poza" />
+          <img id="poza2" class="poza" />
+          <img id="poza3" class="poza" />
+        </div>
+      </div>
+
+      <div class="drumul_trenurilor">
+        <h1>Drumul Trenurilor</h1>
+        <div class="drum">
+          <div class="plecare">
+            <p>Plecare la</p>
+            <p class="mai_mare">14:30</p>
+            <p>Galati</p>
+          </div>
+          <div class="dash"><hr /></div>
+          <div class="tren">
+            <p>
+              <em class="red">IR</em><em class="blue"> 1574</em> Tren direct
+            </p>
+            <p class="mai_mare">3 ore 36 minute</p>
+            <p class="red">12+ minute intarziere</p>
+          </div>
+          <div class="dash"><hr /></div>
+          <div class="sosire">
+            <p>Sosire la</p>
+            <p class="mai_mare">18:06</p>
+            <p>Bucuresti Nord</p>
+          </div>
+        </div>
+        <div class="drum">
+          <div class="plecare">
+            <p>Plecare la</p>
+            <p class="mai_mare">16:28</p>
+            <p>Galati</p>
+          </div>
+          <div class="dash"><hr /></div>
+          <div class="tren">
+            <p>
+              <em class="red">IR</em><em class="blue"> 1866</em> Tren direct
+            </p>
+            <p class="mai_mare">4 ore 7 minute</p>
+            <p class="red">10+ minute intarziere</p>
+          </div>
+          <div class="dash"><hr /></div>
+          <div class="sosire">
+            <p>Sosire la</p>
+            <p class="mai_mare">20:35</p>
+            <p>Iasi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

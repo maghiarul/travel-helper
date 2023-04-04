@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles/iasi.css" rel="stylesheet" />
+    <link href="../styles/globals.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.jpg" />
+
+    <script src="../scripts/iasi.js"></script>
+    <title>TH | Iasi</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="a">Iasi</h1>
+      <p id="b">"Târgu' Ieșilor"</p>
+      <div id="c">
+        <img
+          src="../assets/images/iasi/iasi.png"
+          alt="galati"
+          width="600px"
+          height="auto"
+          id="iasi"
+        />
+        <div class="pins" id="Gradina Botanica" onclick="showPlace(this.id)">
+          <h3>Gradina Botanica</h3>
+          <img
+            src="../assets/images/pin.svg"
+            width="32px"
+            height="auto"
+            class="pin"
+          />
+        </div>
+        <div class="pins" id="Palatul Culturii" onclick="showPlace(this.id)">
+          <h3>Palatul Culturii</h3>
+          <img
+            src="../assets/images/pin.svg"
+            width="32px"
+            height="auto"
+            class="pin"
+          />
+        </div>
+        <div
+          class="pins"
+          id="Bulevardul Stefan cel Mare"
+          onclick="showPlace(this.id)"
+        >
+          <h3>Bulevardul Stefan cel Mare</h3>
+          <img
+            src="../assets/images/pin.svg"
+            width="32px"
+            height="auto"
+            class="pin"
+          />
+        </div>
+        <div class="pins" id="Palatul Roznovanu" onclick="showPlace(this.id)">
+          <h3>Palatul Roznovanu</h3>
+          <img
+            src="../assets/images/pin.svg"
+            width="32px"
+            height="auto"
+            class="pin"
+          />
+        </div>
+      </div>
+      <div class="info_locatie">
+        <div class="nume-desc">
+          <h1 id="nume"></h1>
+          <p id="desc"></p>
+        </div>
+        <div class="poze">
+          <img id="poza1" class="poza" />
+          <img id="poza2" class="poza" />
+          <img id="poza3" class="poza" />
+        </div>
+      </div>
+
+      <div class="drumul_trenurilor">
+        <h1>Drumul Trenurilor</h1>
+        <div class="drum">
+          <div class="plecare">
+            <p>Plecare la</p>
+            <p class="mai_mare">5:17</p>
+            <p>Iasi</p>
+          </div>
+          <div class="tren">
+            <p>
+              <em class="red">IC</em><em class="blue"> 561</em> Tren direct
+            </p>
+            <p class="mai_mare">6 ore 10 minute</p>
+            <p class="red">38+ minute intarziere</p>
+          </div>
+          <div class="sosire">
+            <p>Sosire la</p>
+            <p class="mai_mare">11:27</p>
+            <p>Bucuresti Nord</p>
+          </div>
+        </div>
+        <div class="drum">
+          <div class="plecare">
+            <p>Plecare la</p>
+            <p class="mai_mare">22:45</p>
+            <p>Iasi</p>
+          </div>
+          <div class="tren">
+            <p>
+              <em class="red">IR</em><em class="blue">01668</em> Tren direct
+            </p>
+            <p class="mai_mare">8 ore 4 minute</p>
+            <p class="green">0+ minute intarziere</p>
+          </div>
+          <div class="sosire">
+            <p>Sosire la</p>
+            <p class="mai_mare">6:49</p>
+            <p>Constanta</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

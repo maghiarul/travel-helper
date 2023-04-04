@@ -1,0 +1,59 @@
+[id="Faleza Dunarii"]:hover > img {
+  scale: 1.3;
+  transform: translateY(-20%);
+}
+
+[id="Faleza Dunarii"]:hover > h3 {
+  scale: 1.2;
+  visibility: visible;
+  transform: translateY(-60%);
+}
+
+[id="Turnul de Televiziune"]:hover > img {
+  scale: 1.3;
+  transform: translateY(-20%);
+}
+
+[id="Turnul de Televiziune"]:hover > h3 {
+  scale: 1.2;
+  visibility: visible;
+  transform: translateY(-60%);
+}
+[id="Muzeu de Istorie"]:hover > img {
+  scale: 1.3;
+  transform: translateY(-20%);
+}
+
+[id="Muzeu de Istorie"]:hover > h3 {
+  scale: 1.2;
+  visibility: visible;
+  transform: translateY(-60%);
+}
+[id="Gradina Botanica"]:hover > img {
+  scale: 1.3;
+  transform: translateY(-20%);
+}
+
+[id="Gradina Botanica"]:hover > h3 {
+  scale: 1.2;
+  visibility: visible;
+  transform: translateY(-60%);
+}
+
+[id="Faleza Dunarii"] {
+  top: -70px;
+  left: 100px;
+}
+[id="Muzeu de Istorie"] {
+  top: -380px;
+  left: 130px;
+}
+[id="Gradina Botanica"] {
+  top: -580px;
+  left: 140px;
+}
+[id="Turnul de Televiziune"] {
+  top: -200px;
+  left: 130px;
+}
+

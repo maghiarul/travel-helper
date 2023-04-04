@@ -1,0 +1,286 @@
+@font-face {
+  font-family: "Capriola";
+  src: url("../assets/fonts/Capriola.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Capriola", sans-serif;
+}
+
+:root {
+  --oxford-blue: #2a37c7;
+  --off-red: #f51400;
+  --crem: #f6f6f6;
+  --black: #23272a;
+}
+
+.heading {
+  display: flex;
+  background-color: var(--oxford-blue);
+  color: var(--crem);
+}
+
+.heading > .left {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.heading > .left > .logo-name {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  font-size: 1.5rem;
+}
+
+.heading > .left > .description {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 7rem;
+  max-width: 400px;
+}
+
+.heading > .right {
+  display: none;
+}
+
+.romania {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.romania > img {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: 10rem;
+  position: absolute;
+}
+
+#galati {
+  position: relative;
+  left: 165px;
+  top: -5px;
+}
+#bucuresti {
+  position: relative;
+  left: 74px;
+  top: 60px;
+}
+
+#iasi {
+  position: relative;
+  left: 75px;
+  top: -80px;
+}
+
+#cluj {
+  position: relative;
+  left: -115px;
+  top: -60px;
+}
+
+#constanta {
+  position: relative;
+  left: 95px;
+  top: 70px;
+}
+
+.pin {
+  transition: 0.2s;
+}
+.pin:hover {
+  scale: 1.5;
+  transform: translateY(-20%);
+  cursor: pointer;
+}
+.active {
+  scale: 1.2;
+  fill: #f51400;
+}
+
+.info-romania {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+#pp {
+  text-align: center;
+  color: #aeadad;
+  margin-top: 2rem;
+}
+
+.name > h1 {
+  transform: translateY(120%);
+  opacity: 0;
+  animation: 1s slideBottom forwards ease-in-out;
+}
+
+.description > h2 {
+  transform: translateX(120%);
+  opacity: 0;
+  animation: 1s slideLeft forwards ease-in-out;
+  animation-delay: 1.5s;
+}
+
+#pp,
+#lol {
+  transform: translateY(120%);
+  opacity: 0;
+  animation: 1s slideBottom forwards ease-in-out;
+  animation-delay: 2.5s;
+}
+
+.n {
+  display: inherit;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+@keyframes slideBottom {
+  from {
+    transform: translateY(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  background-color: #2a37c7;
+  color: white;
+  padding-top: 1rem;
+}
+.nav-item > a {
+  font-size: 1.35rem;
+  transition: 0.2s;
+  text-decoration: none;
+  color: #fff;
+}
+.nav-item > a:hover {
+  cursor: pointer;
+  color: #000;
+}
+@media only screen and (max-device-width: 768px){
+  .logo > img {
+    width: 64px;
+  }
+  .nav-item > hr {
+    visibility: hidden;
+  }
+  .n > .nav-item:nth-child(1) {
+    margin-right: 1rem;
+  }
+  .n > .nav-item:nth-child(3) {
+    margin-left: 1rem;
+  }
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .romania {
+    margin-top: 5rem;
+  }
+  .nav-item > hr {
+    visibility: hidden;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) {
+  .name > h1 {
+    font-size: 6rem;
+  }
+  .description > h2 {
+    margin-top: 1.5rem;
+  }
+  #rom {
+    width: 800px;
+    top: -50px;
+    margin-bottom: 5rem;
+  }
+  #galati {
+    position: relative;
+    left: 295px;
+    top: 225px;
+  }
+  #bucuresti {
+    position: relative;
+    left: 130px;
+    top: 375px;
+  }
+
+  #iasi {
+    position: relative;
+    left: 180px;
+    top: 40px;
+  }
+
+  #cluj {
+    position: relative;
+    left: -185px;
+    top: 100px;
+  }
+
+  #constanta {
+    position: relative;
+    left: 250px;
+    top: 400px;
+  }
+  #pp {
+    margin-top: 3rem;
+  }
+  .nav-item > hr {
+    width: 2px;
+    height: 30px;
+    border: none;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #000;
+  }
+
+  .hover-underline-animation::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}

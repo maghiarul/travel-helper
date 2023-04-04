@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles/constanta.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.jpg" />
+
+    <link href="../styles/globals.css" rel="stylesheet" />
+    <script src="../scripts/constanta.js"></script>
+    <title>TH | Constanta</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="a">Constanta</h1>
+      <p id="b">"Tomis"</p>
+      <div id="c">
+        <img
+          src="../assets/images/constanta/constanta.png"
+          alt="galati"
+          width="600px"
+          height="auto"
+        />
+        <div class="pins" id="Cazinoul" onclick="showPlace(this.id)">
+          <h3>Cazinoul</h3>
+          <img
+            src="../assets/images/pin.svg"
+            width="32px"
+            height="auto"
+            class="pin"
+          />
+        </div>
+        <div class="pins" id="Delfinariul" onclick="showPlace(this.id)">
+          <h3>Delfinariul</h3>
+          <img
+            src="../assets/images/pin.svg"
+            width="32px"
+            height="auto"
+            class="pin"
+          />
+        </div>
+        <div class="pins" id="Farul Genovez" onclick="showPlace(this.id)">
+          <h3>Farul Genovez</h3>
+          <img
+            src="../assets/images/pin.svg"
+            width="32px"
+            height="auto"
+            class="pin"
+          />
+        </div>
+        <div class="pins" id="Piata Ovidiu" onclick="showPlace(this.id)">
+          <h3>Piata Ovidiu</h3>
+          <img
+            src="../assets/images/pin.svg"
+            width="32px"
+            height="auto"
+            class="pin"
+          />
+        </div>
+      </div>
+      <div class="info_locatie">
+        <div class="nume-desc">
+
+        <h1 id="nume"></h1>
+        <p id="desc"></p>
+        </div>
+
+        <div class="poze">
+          <img id="poza1" class="poza" />
+          <img id="poza2" class="poza" />
+          <img id="poza3" class="poza" />
+        </div>
+      </div>
+
+      <div class="drumul_trenurilor">
+        <h1>Drumul Trenurilor</h1>
+        <div class="drum">
+          <div class="plecare">
+            <p>Plecare la</p>
+            <p class="mai_mare">6:05</p>
+            <p>Constanta</p>
+          </div>
+          <div class="tren">
+            <p>
+              <em class="red">R</em><em class="blue"> 8020</em> Tren direct
+            </p>
+            <p class="mai_mare">4 ore 6 minute</p>
+            <p class="green">0+ minute intarziere</p>
+          </div>
+          <div class="sosire">
+            <p>Sosire la</p>
+            <p class="mai_mare">10:11</p>
+            <p>Bucuresti Obor</p>
+          </div>
+        </div>
+        <div class="drum">
+          <div class="plecare">
+            <p>Plecare la</p>
+            <p class="mai_mare">21:09</p>
+            <p>Constanta</p>
+          </div>
+          <div class="tren">
+            <p>
+              <em class="red">IR</em><em class="blue"> 1862</em> Tren direct
+            </p>
+            <p class="mai_mare">8 ore 2 minute</p>
+            <p class="green">0+ minute intarziere</p>
+          </div>
+          <div class="sosire">
+            <p>Sosire la</p>
+            <p class="mai_mare">5:11</p>
+            <p>Iasi</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

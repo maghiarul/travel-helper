@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../styles/index.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo.jpg" />
+    <script src="../scripts/index.js"></script>
+    <title>TH | Travel Helper</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-item logo">
+        <img src="../assets/images/logo.jpg" width="128px" height="auto" />
+      </div>
+      <div class="n">
+        <div class="nav-item">
+          <a href="./about.html" class="hover-underline-animation">About</a>
+        </div>
+        <div class="nav-item">
+          <hr />
+        </div>
+        <div class="nav-item">
+          <a href="./docs.html" class="hover-underline-animation">Docs</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="heading">
+      <div class="left">
+        <div class="logo-name">
+          <div class="name">
+            <h1>Travel Helper</h1>
+          </div>
+        </div>
+        <div class="description">
+          <h2>Ajutorul tau in planificarea excursiilor tale.</h2>
+        </div>
+      </div>
+      <div class="right">
+        <img src="" />
+      </div>
+    </div>
+
+    <p id="pp">* selecteaza destinatia pe harta *</p>
+    <div class="romania" id="lol">
+      <img
+        src="../assets/images/index/romania.jpg"
+        width="350px"
+        height="auto"
+        id="rom"
+      />
+      <img
+        class="pin"
+        id="galati"
+        src="../assets/images/pin.svg"
+        width="32px"
+        height="auto"
+        onclick="travel(galati)"
+      />
+      <img
+        class="pin"
+        id="bucuresti"
+        src="../assets/images/pin.svg"
+        width="32px"
+        height="auto"
+        onclick="travel(bucuresti)"
+      />
+      <img
+        class="pin"
+        id="iasi"
+        src="../assets/images/pin.svg"
+        width="32px"
+        height="auto"
+        onclick="travel(iasi)"
+      />
+      <img
+        class="pin"
+        id="constanta"
+        src="../assets/images/pin.svg"
+        width="32px"
+        height="auto"
+        onclick="travel(constanta)"
+      />
+      <img
+        class="pin"
+        id="cluj"
+        src="../assets/images/pin.svg"
+        width="32px"
+        height="auto"
+        onclick="travel(cluj)"
+      />
+    </div>
+  </body>
+</html>

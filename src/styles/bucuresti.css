@@ -1,0 +1,57 @@
+[id="Muzeul Cotroceni"]:hover > img {
+  scale: 1.3;
+  transform: translateY(-20%);
+}
+
+[id="Muzeul Cotroceni"]:hover > h3 {
+  scale: 1.2;
+  visibility: visible;
+  transform: translateY(-60%);
+}
+
+[id="Palatul Parlamentului"]:hover > img {
+  scale: 1.3;
+  transform: translateY(-20%);
+}
+
+[id="Palatul Parlamentului"]:hover > h3 {
+  scale: 1.2;
+  visibility: visible;
+  transform: translateY(-60%);
+}
+[id="Calea Victoriei"]:hover > img {
+  scale: 1.3;
+  transform: translateY(-20%);
+}
+
+[id="Calea Victoriei"]:hover > h3 {
+  scale: 1.2;
+  visibility: visible;
+  transform: translateY(-60%);
+}
+[id="Ateneul Roman"]:hover > img {
+  scale: 1.3;
+  transform: translateY(-20%);
+}
+
+[id="Ateneul Roman"]:hover > h3 {
+  scale: 1.2;
+  visibility: visible;
+  transform: translateY(-60%);
+}
+[id="Muzeul Cotroceni"] {
+  top: -500px;
+  left: -40px;
+}
+[id="Calea Victoriei"] {
+  top: -555px;
+  left: -10px;
+}
+[id="Ateneul Roman"] {
+  top: -470px;
+  left: 0px;
+}
+[id="Palatul Parlamentului"] {
+  top: -385px;
+  left: 35px;
+}

@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "Capriola";
+  src: url("../assets/fonts/Capriola.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Capriola", sans-serif;
+}
+
+:root {
+  --gray: #efefef;
+  --slate: #808080;
+  --red: #ff0000;
+  --blue: #007bff;
+  --green: #006400;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  overflow-x: hidden;
+}
+.container > img {
+  margin-top: 3.5rem;
+}
+
+.pin {
+  transition: 0.2s;
+  position: relative;
+}
+
+.pins {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.pins > h3 {
+  visibility: hidden;
+  transition: 0.1s;
+}
+
+.drumul_trenurilor {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.drumul_trenurilor > h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.drum {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--gray);
+  color: var(--slate);
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.poza {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.poze {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mai_mare {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.red {
+  color: var(--red);
+}
+.blue {
+  color: var(--blue);
+}
+.green {
+  color: var(--green);
+}
+
+.nume-desc {
+  margin: 1rem;
+  max-width: 1000px;
+}
+
+#a {
+  transform: translateX(120%);
+  opacity: 0;
+  animation: 1s slideLeft forwards ease-in-out;
+}
+#b {
+  transform: translateY(120%);
+  opacity: 0;
+  animation: 1s slideBottom forwards ease-in-out;
+  animation-delay: 1s;
+}
+#c {
+  margin-top: 2rem;
+  transform: translateY(120%);
+  opacity: 0;
+  animation: 1s slideBottom forwards ease-in-out;
+  animation-delay: 2s;
+}
+
+.dash {
+  visibility: hidden;
+}
+
+img , h3 {
+  overflow: auto;
+}
+
+.pins{
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes slideBottom {
+  from {
+    transform: translateY(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (min-device-width: 1024px) {
+  .poze {
+    flex-direction: row;
+    margin-top: 3rem;
+  }
+  .poza {
+    width: 400px;
+    height: 400px;
+  }
+  .info_locatie {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a37c7;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    margin-bottom: 7rem;
+  }
+  #nume {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+  }
+  #desc {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  .drumul_trenurilor > h1 {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+  .drum {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .dash {
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .dash > hr {
+    width: 100px;
+    height: 3px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(206, 206, 206);
+  }
+}

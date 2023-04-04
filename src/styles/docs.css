@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Capriola";
+  src: url("../assets/fonts/Capriola.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Capriola", sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    width: 50%;
+    margin-top: 8rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p {
+    padding: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #292D3E;
+    color: #BFC7D5;
+    line-height: 1.3rem;
+    border-radius: 10px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.limbi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.limbi > img {
+    width: auto;
+    height: 100px;
+    object-fit: cover;
+    margin: 2rem;
+}
+.centered{
+    text-align: center;
+}
