@@ -17,6 +17,30 @@
   --black: #23272a;
 }
 
+
+/* ------------- Navbar ---------------- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  background-color: #2a37c7;
+  color: white;
+  padding-top: 1rem;
+}
+.nav-item > a {
+  font-size: 1.35rem;
+  transition: 0.2s;
+  text-decoration: none;
+  color: #fff;
+}
+.nav-item > a:hover {
+  cursor: pointer;
+}
+
+/* ----------------------- Heading ------------------------ */
+
 .heading {
   display: flex;
   background-color: var(--oxford-blue);
@@ -49,6 +73,21 @@
 .heading > .right {
   display: none;
 }
+
+.name > h1 {
+  transform: translateY(120%);
+  opacity: 0;
+  animation: 1s slideBottom forwards ease-in-out;
+}
+
+.description > h2 {
+  transform: translateX(120%);
+  opacity: 0;
+  animation: 1s slideLeft forwards ease-in-out;
+  animation-delay: 1.5s;
+}
+
+/* -------------------- Harta de mai jos ------------------------ */
 
 .romania {
   display: flex;
@@ -110,27 +149,14 @@
   text-align: center;
 }
 
-#pp {
+#text-ajutator {
   text-align: center;
   color: #aeadad;
   margin-top: 2rem;
 }
 
-.name > h1 {
-  transform: translateY(120%);
-  opacity: 0;
-  animation: 1s slideBottom forwards ease-in-out;
-}
-
-.description > h2 {
-  transform: translateX(120%);
-  opacity: 0;
-  animation: 1s slideLeft forwards ease-in-out;
-  animation-delay: 1.5s;
-}
-
-#pp,
-#lol {
+#text-ajutator,
+#harta-romania {
   transform: translateY(120%);
   opacity: 0;
   animation: 1s slideBottom forwards ease-in-out;
@@ -143,49 +169,11 @@
   width: 30%;
 }
 
-@keyframes slideBottom {
-  from {
-    transform: translateY(120%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+/* -------------------------- Responsive -------------------------------- */
 
-@keyframes slideLeft {
-  from {
-    transform: translateX(120%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
+/* ------ Telefon ------- */
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-right: 3rem;
-  padding-left: 3rem;
-  background-color: #2a37c7;
-  color: white;
-  padding-top: 1rem;
-}
-.nav-item > a {
-  font-size: 1.35rem;
-  transition: 0.2s;
-  text-decoration: none;
-  color: #fff;
-}
-.nav-item > a:hover {
-  cursor: pointer;
-  color: #000;
-}
-@media only screen and (max-device-width: 768px){
+@media only screen and (max-device-width: 768px) {
   .logo > img {
     width: 64px;
   }
@@ -200,6 +188,7 @@
   }
 }
 
+/* ------------- Tableta ------------- */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .romania {
@@ -209,6 +198,8 @@
     visibility: hidden;
   }
 }
+
+/* ---------------- Laptop -------------------- */
 
 @media only screen and (min-device-width: 1024px) {
   .name > h1 {
@@ -250,7 +241,7 @@
     left: 250px;
     top: 400px;
   }
-  #pp {
+  #text-ajutator {
     margin-top: 3rem;
   }
   .nav-item > hr {
@@ -260,27 +251,51 @@
     background-color: #fff;
     border-radius: 10px;
   }
-  .hover-underline-animation {
+  .nav-item-anchor {
     display: inline-block;
     position: relative;
-    color: #000;
+    color: #0f77ff;
   }
 
-  .hover-underline-animation::after {
+  .nav-item-anchor::after {
     content: "";
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    height: 3px;
+    bottom: -2px;
+    left: 0;
+    background-color: #0f77ff;
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
   }
 
-  .hover-underline-animation:hover::after {
+  .nav-item-anchor:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+}
+
+/* --------------------- Animatii -------------------------- */
+
+@keyframes slideBottom {
+  from {
+    transform: translateY(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }

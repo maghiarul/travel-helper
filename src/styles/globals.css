@@ -124,37 +124,49 @@
   visibility: hidden;
 }
 
-img , h3 {
+img,
+h3 {
   overflow: auto;
 }
 
-.pins{
+.pins {
   width: 50px;
   margin-left: auto;
   margin-right: auto;
 }
 
-@keyframes slideBottom {
-  from {
-    transform: translateY(120%);
-    opacity: 0;
+/* ------------------------------- Responsive -------------------------------- */
+
+/* ------- Telefon & Tableta --------- */
+
+@media only screen and (max-device-width: 1024px) {
+  .tren {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
-  to {
-    transform: translateY(0);
-    opacity: 1;
+  .info_locatie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a37c7;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+    margin-bottom: 7rem;
+    width: 100%;
+  }
+  #nume {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+  }
+  #desc {
+    font-size: 1.2rem;
+    color: #fff;
   }
 }
 
-@keyframes slideLeft {
-  from {
-    transform: translateX(120%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
+/* -------- Laptop -------- */
 
 @media screen and (min-device-width: 1024px) {
   .poze {
@@ -206,5 +218,29 @@ img , h3 {
     border: none;
     border-radius: 5px;
     background-color: rgb(206, 206, 206);
+  }
+}
+
+/* --------------------------- Animatii ----------------------------- */
+
+@keyframes slideBottom {
+  from {
+    transform: translateY(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
