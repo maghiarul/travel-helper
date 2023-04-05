@@ -89,6 +89,14 @@
 
 /* -------------------- Harta de mai jos ------------------------ */
 
+
+/* 
+Music♩♪♫♬ Volume: ▁ ▂ ▃ ▄ ▅ ▆ █ 100 %
+
+███▓▒░░._____.░░▒▓███► Check Back for Updates 
+
+*/
+
 .romania {
   display: flex;
   justify-content: center;
@@ -274,6 +282,11 @@
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+  /* https://www.30secondsofcode.org/css/s/hover-underline-animation/
+    Efectul de hover de mai sus este luat de aici.
+    no copyright strike pls.
+  */
 }
 
 /* --------------------- Animatii -------------------------- */
