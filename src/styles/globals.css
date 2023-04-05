@@ -135,6 +135,41 @@ h3 {
   margin-right: auto;
 }
 
+.drumul_cu_masina{
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.drumul_cu_masina > h1{
+  text-align: center;
+}
+
+.drumuri_masina{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+.drum_masina{
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.drum_masina > img{
+  width: 350px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.drum_masina > h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 /* ------------------------------- Responsive -------------------------------- */
 
 /* ------- Telefon & Tableta --------- */
@@ -163,6 +198,13 @@ h3 {
   #desc {
     font-size: 1.2rem;
     color: #fff;
+  }
+  .drumuri_masina{
+    flex-direction: column;
+  }
+  .drum_masina{
+    margin-top: 5rem;
+    margin: 2rem;
   }
 }
 
@@ -218,6 +260,9 @@ h3 {
     border: none;
     border-radius: 5px;
     background-color: rgb(206, 206, 206);
+  }
+  .drumul_cu_masina{
+    font-size: 1.5rem;
   }
 }
 
